@@ -11,8 +11,8 @@ const page = () => {
             "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ];
   return (
-<main className="flex min-h-screen flex-col items-center justify-between p-24">
-<ImagesSlider className="h-[40rem]" images={images}>
+<main className="">
+<ImagesSlider className="lg:h-[40rem] max-sm:w-full max-sm:h-screen" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -27,10 +27,10 @@ const page = () => {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold  ml-10 tracking-widest font-mono  text-2xl md:text-6xl text-center bg-clip-text text-transparent bg-clip bg-gradient-to-b from-slate-50 to-neutral-950' py-4">
+        <motion.p className="font-bold  max-sm:mt-[-380px] max-sm:text-xl ml-10 tracking-widest font-mono  text-2xl md:text-6xl text-center bg-clip-text text-transparent bg-clip bg-gradient-to-b from-slate-50 to-neutral-950' py-4">
           The Weather Report Near You...!
         </motion.p>
-        <div className=" flex  gap-8 ">
+        <div className=" flex  max-sm:flex-col mxs gap-9 max-sm:mt-11 max-sm:gap-16 ">
 
         <button className="px-4 py-2  mt-10npm backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative ">
           <Link href="/report">

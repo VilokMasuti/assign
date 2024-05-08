@@ -9,6 +9,7 @@ const page = () => {
     
 
       <div className=' flex mt-24 gap-10'>
+     
             <Link href=" https://www.linkedin.com/in/vilok-masuti-99aab8252/">
             <Linkedin width={100} height={100}/>
             </Link>

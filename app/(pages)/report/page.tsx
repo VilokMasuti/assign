@@ -58,28 +58,28 @@ const Weatherpage = () => {
   };
 
   return (
-    <div className='flex items-center justify-center mx-auto'>
-      <div className='mt-[280px] '>
-        <form onSubmit={handleSubmit} className='   ml-[60px]'>
-          <input type='text' className='  text-black  w-[300px] px-6 p-4 ml-6' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} />
-          <button className='px-6 py-3 bg-black text-white  rounded-full ml-6' type='submit'>Submit</button>
+    <div className='flex items-center justify-center  h-fit'>
+      <div className='mt-[280px] w-[600px] h-[500px] max-sm:mt-[150px] ' >
+        <form onSubmit={handleSubmit} className='   lg:ml-[60px] '>
+          <input type='text' className=' max-sm:ml-[50px] max-sm:mt-[80px] text-black  w-[300px] px-6 p-4 lg:ml-6' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} />
+          <button className='px-3 py-3 max-sm:pt-12  max-sm:ml-[50px]  rounded-full ml-6' type='submit'>Submit</button>
         </form>
         {loading && <p className=' mt-5'><Loading/></p>}
         {weatherData && (
-  <div className="w-[900px] bg-black">
+  <div className="w-[900px] h-[400px] bg-black">
     <Dialog>
-      <DialogTrigger className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-50 tracking-tighter underline font-bold ml-12 mt-14">
+      <DialogTrigger className="text-4xl max-sm:ml-[170px]  max-sm:text-xl bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-50 tracking-tighter underline font-bold ml-12 mt-14">
         Click To See Weather Data
       </DialogTrigger>
-      <DialogContent className="w-[900px] bg-black">
+      <DialogContent className="lg:w-[900px] max-sm:mt-[-350px] max-sm:ml-[-90px] max-sm:w-[400px] bg-black">
         <DialogHeader className="w-[900px] h-[200px]">
-          <DialogTitle>Weather Information</DialogTitle>
+          <DialogTitle className='max-sm:ml-[-530px] '>Weather Information</DialogTitle>
           <div className="flex justify-between">
             <DialogDescription className="mt-12 flex">
               Name: {weatherData.name} <br />
               Temperature: {weatherData?.main.temp}&deg;C <br />
               Humidity: {weatherData?.main.humidity}&deg;C
-              population:{weatherData?.main.sunrise}
+          
               <Image
                 className="ml-28"
                 src={`https://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@4x.png`}
