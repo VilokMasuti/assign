@@ -27,7 +27,7 @@ const page = () => {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold  max-sm:mt-[-380px] max-sm:text-xl ml-10 tracking-widest font-mono  text-2xl md:text-6xl text-center bg-clip-text text-transparent bg-clip bg-gradient-to-b from-slate-50 to-neutral-950' py-4">
+        <motion.p className="font-bold  max-sm:mt-[-380px] max-sm:text-xl ml-10 tracking-widest font-mono text-4xl md:text-6xl text-center bg-clip-text text-transparent bg-clip bg-gradient-to-b from-slate-50 to-neutral-950' py-4">
           The Weather Report Near You...!
         </motion.p>
         <div className=" flex  max-sm:flex-col mxs gap-9 max-sm:mt-11 max-sm:gap-16 ">

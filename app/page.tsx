@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="">
    
-       <LampContainer className=" max-sm:mt-[-190px]">
+       <LampContainer className=" max-sm:mt-[-130px]">
        <button  className="  px-4 py-3 max-sm:ml-[-20px] rounded-full p-2 bg-black" >
         <Link className=" max-sm:mt-[70px]" href="/home"> Press Me Lets Light Up </Link>
       </button>
